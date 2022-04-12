@@ -27,27 +27,23 @@ Data obtained from [MTA DATASET](http://web.mta.info/developers/turnstile.html)
 
 ### Field Description:
 
-  | Field Name | Description |
+| Field Name |Description  |
+|--|--|
+  | C/A | Control Area (A002)  |
+  | UNIT  | Remote Unit for a station (R051)  |
+  | SCP |Subunit Channel Position represents an specific address for a device (02-00-00)  |
+  | STATION |Represents the station name the device is located at  |
+  | LINENAME|Represents all train lines that can be boarded at this station  |
+  | DIVISION |Represents the Line originally the station belonged to BMT, IRT, or IND  |
+  | DATE  |Represents the date (MM-DD-YY)  |
+  | TIME | Represents the time (hh:mm:ss) for a scheduled audit event  |
+  | DESC  |Represent the "REGULAR" scheduled audit event (Normally occurs every 4 hours)  |
+  | Field  | Description |
 
-|------------|---------------------------------------------------------------------------------|
 
-| C/A | Control Area (A002) |
+| TIME | Represents the time (hh:mm:ss) for a scheduled audit event 
 
-| UNIT | Remote Unit for a station (R051) |
-
-| SCP | Subunit Channel Position represents an specific address for a device (02-00-00) |
-
-| STATION | Represents the station name the device is located at |
-
-| LINENAME | Represents all train lines that can be boarded at this station |
-
-| DIVISION | Represents the Line originally the station belonged to BMT, IRT, or IND |
-
-| DATE | Represents the date (MM-DD-YY) |
-
-| TIME | Represents the time (hh:mm:ss) for a scheduled audit event |
-
-| DESC | Represent the "REGULAR" scheduled audit event (Normally occurs every 4 hours) |
+| DESC |
 
 | ENTRIES | The comulative entry register value for a device |
 
@@ -57,37 +53,16 @@ Data obtained from [MTA DATASET](http://web.mta.info/developers/turnstile.html)
 
 The dataset is taken from Kaggle. Data obtained from [Census Dataset](https://www.kaggle.com/muonneutrino/mapping-new-york-city-census-data/data?select=nyc_census_tracts.csv)
 
-
 ### Field Description:
 
 There are many fields. When we delete the ones we will not use, the following fields remain.
 
-  | Field Name | Description |
-
-|------------|---------------------------------------------------------------------------------|
-
+| Field Name |Description  |
+|--|--|
 | Borough | Districts in New York |
-
-| TotalPop | Remote Unit for a station (R051) |
-
-| Men | Total Number of Women in the District|
-
-| Women | Total Number of Men in the District |
-
+| TotalPop | Total Population of Districts |
+| Men | Districts in New York |
+| Women | Districts in New York |
 | Income | Monthly Per Capita Income |
+| IncomePerCap | Annual Per Capita Income |
 
-| IncomePerCap | Annual Per Capita Income|
-
-
-# RESULTS:
-
- - The day with the busiest traffic : Friday
- - The hour with the busiest traffic : Between 20.00-00.00
- - Districts with the most women : Brooklyn-Queens-Manhattan
- - Districts with the highest per capita income : Manhattan-Staten Island-Brooklyn
- - Most visited stations : All 3 stations are located in Manhattan
-	-   34th Street–Penn
-	-   42 Street-Port Authority
-	-   125 ST
-
-Based on the information above, we can put our teams on Friday at 34th Street–Penn and 42 Street-Port Authority stations in Manhattan between 8 PM and 8 PM.
